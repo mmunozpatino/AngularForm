@@ -1,0 +1,11 @@
+<h1>{{titulo}}</h1>
+<h2>Va imprimiendo cada cadena</h2>
+<input (keyup)='onKey($event)'>
+<p>{{values}}</p>
+<h2>Muestra directo</h2>
+<input #box (keyup)='0'> 
+<!-- sin el keyup = 0 no funciona el enlace por referencia -->
+<p>{{box.value}}</p>
+<h2>Muestra con enter</h2>
+<input #box1 (keyup.enter)='onEnter(box1.value)'>
+<p>{{enter}}</p>
