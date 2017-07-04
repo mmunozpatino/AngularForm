@@ -14,7 +14,6 @@ export class Formulario{
    }
    onEnter(s: string){
       this.enter = s;
-      //holaaa
    }
 }
 
